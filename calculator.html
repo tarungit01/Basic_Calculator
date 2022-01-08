@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+		
+		<main>
+			<div id="main_div">
+				<div id="header">
+					<h1>BASIC CALCULATOR</h1>
+					<input type="text" id="output">
+				</div>
+				<div class="row">
+					<button class="btn" onClick="btnpress(9)">9</button>
+					<button class="btn" onClick="btnpress(8)">8</button>
+					<button class="btn" onClick="btnpress(7)">7</button>
+					<button class="btn" id="add_btn" onClick="mathbtnpress('+')">+</button>
+				</div>
+				<div class="row">
+					<button class="btn" onClick="btnpress(6)">6</button>
+					<button class="btn" onClick="btnpress(5)">5</button>
+					<button class="btn" onClick="btnpress(4)">4</button>
+					<button class="btn" id="subt_btn" onClick="mathbtnpress('-')">-</button>
+				</div>
+				<div class="row">
+					<button class="btn" onClick="btnpress(3)">3</button>
+					<button class="btn" onClick="btnpress(2)">2</button>
+					<button class="btn" onClick="btnpress(1)">1</button>
+					<button class="btn" id="mult_btn" onClick="mathbtnpress('*')">*</button>
+				</div>
+				<div class="row">
+					<button class="btn" onClick="allclearbtnpress()">AC</button>
+					<button class="btn" onClick="btnpress(0)">0</button>
+					<button class="btn" onClick="btnpress('.')">.</button>
+					<button class="btn" id="divide_btn" onClick="mathbtnpress('/')">/</button>
+				</div>
+				<div class="row">
+					<button class="btn" onClick="copybtnpress()">MC</button>
+					<button class="btn" onClick="pastebtnpress()">MP</button>
+					<button class="btn" id="equal_btn" onClick="math_equalbtnpress('=')">=</button>
+				</div>
+			</div>
+		
+		</main>
+		<script src="calculator.js"></script>
+</body>
+</html>
